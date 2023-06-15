@@ -1,0 +1,11 @@
+.idea
+.vscode
+node_modules
+.yarn
+dist
+junit.xml
+test-report.xml
+.scannerwork
+eslint_report.json
+.DS_Store
+.dccache
