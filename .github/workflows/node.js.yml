@@ -26,7 +26,7 @@ jobs:
       with:
         node-version: ${{ matrix.node-version }}
     - run: yarn
-    - run: yarn build --if-present
-    - run: yarn lint --if-present
-    - run: yarn snyk:ci --if-present
-    - run: yarn snyk:code:ci --if-present
+    - run: yarn build
+    - run: yarn lint
+    - run: yarn snyk:ci
+    - run: yarn snyk:code:ci
