@@ -25,9 +25,8 @@ jobs:
       uses: actions/setup-node@v3
       with:
         node-version: ${{ matrix.node-version }}
-        cache: 'npm'
-    - run: npm ci
-    - run: npm run build --if-present
-    - run: npm run lint --if-present
-    - run: npm run snyk:ci --if-present
-    - run: npm run snyk:code:ci --if-present
+    - run: yarn
+    - run: yarn build --if-present
+    - run: yarn lint --if-present
+    - run: yarn snyk:ci --if-present
+    - run: yarn snyk:code:ci --if-present
